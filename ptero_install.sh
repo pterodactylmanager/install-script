@@ -1,5 +1,5 @@
 #!/bin/bash
-# PterodactylManager installer by CoasterFreakDE - devsky.one noreply@pterodactylmanager.com
+# PterodactylManager installer by DevSky.one noreply@pterodactylmanager.com
 
 # Vars
 
@@ -83,7 +83,7 @@ greenMessage "This is the automatic installer for latest Pterodactyl with Pterod
 sleep 1
 cyanMessage "You can choose between installing, upgrading and removing the PterodactylManager."
 sleep 1
-redMessage "Installer by CoasterFreakDE | DevSky.one - Coding Support"
+redMessage "Installer by DevSky.one - Coding Support"
 sleep 1
 yellowMessage "You're using installer $Instversion"
 
