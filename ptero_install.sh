@@ -206,18 +206,18 @@ select OPTION in "${OPTIONS[@]}"; do
 done
 
 if [ "$OPTION" == "Automatic" ]; then
-  LOCATION=/var/www/pterodactly
+  LOCATION=/var/www/pterodactyl
 elif [ "$OPTION" == "Own path" ]; then
-  yellowMessage "Enter location where the bot should be installed/updated/removed, e.g. /var/www/pterodactly. Include the / at first position and none at the end"!
+  yellowMessage "Enter location where the bot should be installed/updated/removed, e.g. /var/www/pterodactyl. Include the / at first position and none at the end"!
   LOCATION=""
   while [[ ! -d $LOCATION ]]; do
-    read -rp "Location [/var/www/pterodactly]: " LOCATION
+    read -rp "Location [/var/www/pterodactyl]: " LOCATION
     if [[ $INSTALL != "Inst" && ! -d $LOCATION ]]; then
       redMessage "Directory not found, try again"!
     fi
     if [ "$INSTALL" == "Inst" ]; then
       if [ "$LOCATION" == "" ]; then
-        LOCATION=/var/www/pterodactly
+        LOCATION=/var/www/pterodactyl
       fi
       makeDir $LOCATION
     fi
@@ -237,7 +237,7 @@ elif [ "$OPTION" == "Own path" ]; then
   if [ "$OPTION" == "No, change it" ]; then
     LOCATION=""
     while [[ ! -d $LOCATION ]]; do
-      read -rp "Location [/var/www/pterodactly]: " LOCATION
+      read -rp "Location [/var/www/pterodactyl]: " LOCATION
       if [[ $INSTALL != "Inst" && ! -d $LOCATION ]]; then
         redMessage "Directory not found, try again"!
       fi
